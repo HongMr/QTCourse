@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/citiy_1.png</file>
+        <file>images/citiy_2.png</file>
+        <file>images/citiy_3.png</file>
+    </qresource>
+</RCC>

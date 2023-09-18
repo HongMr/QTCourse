@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/editFile.png</file>
+        <file>images/files.png</file>
+        <file>images/file-file.png</file>
+        <file>images/files-open.png</file>
+        <file>images/files-save.png</file>
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/past.png</file>
+        <file>images/chexiao.png</file>
+        <file>images/reset.png</file>
+        <file>images/bold.png</file>
+        <file>images/italic.png</file>
+        <file>images/underline.png</file>
+        <file>images/chip.png</file>
+        <file>images/Enlight.png</file>
+        <file>images/close.png</file>
+    </qresource>
+</RCC>
