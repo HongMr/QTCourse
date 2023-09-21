@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/append.png</file>
+        <file>images/bold.png</file>
+        <file>images/center.png</file>
+        <file>images/chexiao.png</file>
+        <file>images/chip.png</file>
+        <file>images/citiy_1.png</file>
+        <file>images/citiy_2.png</file>
+        <file>images/citiy_3.png</file>
+        <file>images/citiy_4.png</file>
+        <file>images/clear.png</file>
+        <file>images/close.png</file>
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/delete.png</file>
+        <file>images/editFile.png</file>
+        <file>images/Enlight.png</file>
+        <file>images/file-file.png</file>
+        <file>images/files.png</file>
+        <file>images/files-open.png</file>
+        <file>images/files-save.png</file>
+        <file>images/insert.png</file>
+        <file>images/italic.png</file>
+        <file>images/left.png</file>
+        <file>images/list.png</file>
+        <file>images/paint.png</file>
+        <file>images/paixu.png</file>
+        <file>images/past.png</file>
+        <file>images/quit.png</file>
+        <file>images/reset.png</file>
+        <file>images/right.png</file>
+        <file>images/underline.png</file>
+        <file>images/addFolder.png</file>
+        <file>images/add_files.png</file>
+        <file>images/add_folder1.png</file>
+        <file>images/zoomFitWidth.png</file>
+        <file>images/zoomIn.png</file>
+        <file>images/zoomOut.png</file>
+        <file>images/zoomRealSize.png</file>
+        <file>images/deng.png</file>
+        <file>images/guding.png</file>
+        <file>images/hight.png</file>
+        <file>images/search.png</file>
+    </qresource>
+</RCC>

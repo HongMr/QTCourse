@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/error.png</file>
+        <file>images/ok.png</file>
+        <file>images/welman1.png</file>
+        <file>images/wemoan.png</file>
+        <file>images/man.png</file>
+    </qresource>
+</RCC>
