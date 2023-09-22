@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>iconsLib/add_files.png</file>
+        <file>iconsLib/add_folder1.png</file>
+        <file>iconsLib/addFolder.png</file>
+        <file>iconsLib/append.png</file>
+        <file>iconsLib/bold.png</file>
+        <file>iconsLib/center.png</file>
+        <file>iconsLib/chexiao.png</file>
+        <file>iconsLib/chip.png</file>
+        <file>iconsLib/citiy_1.png</file>
+        <file>iconsLib/citiy_2.png</file>
+        <file>iconsLib/citiy_3.png</file>
+        <file>iconsLib/citiy_4.png</file>
+        <file>iconsLib/clear.png</file>
+        <file>iconsLib/close.png</file>
+        <file>iconsLib/copy.png</file>
+        <file>iconsLib/cut.png</file>
+        <file>iconsLib/delete.png</file>
+        <file>iconsLib/deng.png</file>
+        <file>iconsLib/editFile.png</file>
+        <file>iconsLib/Enlight.png</file>
+        <file>iconsLib/error.png</file>
+        <file>iconsLib/file-file.png</file>
+        <file>iconsLib/files.png</file>
+        <file>iconsLib/files-open.png</file>
+        <file>iconsLib/files-save.png</file>
+        <file>iconsLib/girl.png</file>
+        <file>iconsLib/guding.png</file>
+        <file>iconsLib/hight.png</file>
+        <file>iconsLib/insert.png</file>
+        <file>iconsLib/italic.png</file>
+        <file>iconsLib/left.png</file>
+        <file>iconsLib/list.png</file>
+        <file>iconsLib/man.png</file>
+        <file>iconsLib/modelData.png</file>
+        <file>iconsLib/ok.png</file>
+        <file>iconsLib/paint.png</file>
+        <file>iconsLib/paixu.png</file>
+        <file>iconsLib/past.png</file>
+        <file>iconsLib/quit.png</file>
+        <file>iconsLib/reset.png</file>
+        <file>iconsLib/right.png</file>
+        <file>iconsLib/search.png</file>
+        <file>iconsLib/underline.png</file>
+        <file>iconsLib/welman1.png</file>
+        <file>iconsLib/wemoan.png</file>
+        <file>iconsLib/zoomFitWidth.png</file>
+        <file>iconsLib/zoomIn.png</file>
+        <file>iconsLib/zoomOut.png</file>
+        <file>iconsLib/zoomRealSize.png</file>
+    </qresource>
+    <qresource prefix="/pics">
+        <file>pictures/v1.jpg</file>
+    </qresource>
+</RCC>

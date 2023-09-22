@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1211</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>339</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>TableView</string>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>341</width>
+       <height>371</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>373</x>
+      <y>20</y>
+      <width>821</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>PlainTextEdit</string>
+    </property>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>791</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actOpen"/>
+   <addaction name="actModelData"/>
+   <addaction name="separator"/>
+   <addaction name="actAppend"/>
+   <addaction name="actInsert"/>
+   <addaction name="actDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actAlignLeft"/>
+   <addaction name="actAlignCenter"/>
+   <addaction name="actAlignRight"/>
+   <addaction name="actFontBold"/>
+   <addaction name="separator"/>
+   <addaction name="actExit"/>
+  </widget>
+  <action name="actExit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/quit.png</normaloff>:/icons/images/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actModelData">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/modelData.png</normaloff>:/icons/images/modelData.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据浏览</string>
+   </property>
+   <property name="toolTip">
+    <string>数据浏览</string>
+   </property>
+  </action>
+  <action name="actAppend">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/append.png</normaloff>:/icons/images/append.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加行</string>
+   </property>
+   <property name="toolTip">
+    <string>添加行</string>
+   </property>
+  </action>
+  <action name="actInsert">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/insert.png</normaloff>:/icons/images/insert.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入行</string>
+   </property>
+   <property name="toolTip">
+    <string>插入行</string>
+   </property>
+  </action>
+  <action name="actDelete">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/delete.png</normaloff>:/icons/images/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除行</string>
+   </property>
+   <property name="toolTip">
+    <string>删除行</string>
+   </property>
+  </action>
+  <action name="actAlignLeft">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/left.png</normaloff>:/icons/images/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>居左</string>
+   </property>
+   <property name="toolTip">
+    <string>居左</string>
+   </property>
+  </action>
+  <action name="actAlignCenter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/center.png</normaloff>:/icons/images/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中</string>
+   </property>
+   <property name="toolTip">
+    <string>居中</string>
+   </property>
+  </action>
+  <action name="actAlignRight">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/right.png</normaloff>:/icons/images/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>居右</string>
+   </property>
+   <property name="toolTip">
+    <string>居右</string>
+   </property>
+  </action>
+  <action name="actFontBold">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/bold.png</normaloff>:/icons/images/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>粗体</string>
+   </property>
+   <property name="toolTip">
+    <string>粗体</string>
+   </property>
+  </action>
+  <action name="actOpen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/files-open.png</normaloff>:/icons/images/files-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/files-save.png</normaloff>:/icons/images/files-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
