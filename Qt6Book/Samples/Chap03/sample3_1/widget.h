@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QMouseEvent>
 class TPerson;
 
 QT_BEGIN_NAMESPACE
@@ -31,5 +32,23 @@ private slots:
 
 private:
     Ui::Widget *ui;
+
+
+private:
+    //鼠标按下时执行的事件处理函数
+    void mousePressEvent(QMouseEvent *event);
+    //鼠标抬起时执行的事件处理函数
+    void mouseReleaseEvent(QMouseEvent *event);
+    //鼠标移动时执行的事件处理函数
+    void mouseMoveEvent(QMouseEvent *event);
+private:
+    bool m_drag;//标记是否可以拖拽
+    QPoint m_pos;//记录鼠标和label的相对位置
 };
 #endif // WIDGET_H
+
+
+
+
+
+

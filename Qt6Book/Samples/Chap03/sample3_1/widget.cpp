@@ -3,6 +3,7 @@
 #include "ui_widget.h"
 #include <QMetaProperty>
 
+#include <iostream>
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -29,6 +30,10 @@ Widget::Widget(QWidget *parent)
 
     connect(ui->spinBoy,SIGNAL(valueChanged(int)),this,SLOT(do_spinChanged(int)));
     connect(ui->spinGirl,SIGNAL(valueChanged(int)),this,SLOT(do_spinChaged(int)));
+
+    m_drag = false;
+
+    ui->moveLabel->raise();
 }
 
 Widget::~Widget()
@@ -97,4 +102,68 @@ void Widget::on_btnClassInfo_clicked()
     }
 #endif
 }
+
+
+//鼠标按下时执行的事件处理函数
+void Widget::mousePressEvent(QMouseEvent *event)
+{
+    std::cout<<"subio 1111111"<<std::endl;
+    //是否为鼠标左键按下
+    if(event->button() == Qt::LeftButton){
+         std::cout<<"subio 2222"<<std::endl;
+        //获取label所在矩形区域
+        //QRect rect = ui->moveLabel->frameRect();
+        QRect rect = ui->frame->frameRect();
+        //坐标值平移,让rect和鼠标坐标系一致
+        rect.translate(ui->frame->pos());
+        //判断鼠标点击位置是否在rect范围中
+        if(rect.contains(event->pos())==true){
+            std::cout<<"subio 3333"<<std::endl;
+            m_drag = true;//标记可以执行拖拽操作
+            m_pos = ui->moveLabel->pos()-event->pos();//记录lable和鼠标相对位置
+            //m_pos = ui->btnMove->pos()-event->pos();//记录lable和鼠标相对位置
+        }
+    }
+}
+//鼠标抬起时执行的事件处理函数
+void Widget::mouseReleaseEvent(QMouseEvent *event)
+{
+    if(event->button() == Qt::LeftButton){
+        m_drag = false;
+    }
+}
+
+//鼠标移动时执行的事件处理函数
+void Widget::mouseMoveEvent(QMouseEvent *event)
+{
+    if(m_drag == true){
+        //计算label移动的新位置
+        QPoint newPos = m_pos + event->pos();
+        //设置label移动范围:不能超出父窗口
+        //QSize s1 = size();//获取窗口大小
+        QSize s1 = ui->frame->size();//获取frame大小
+        QSize s2 = ui->moveLabel->size();//获取label大小
+        //x:最小值(0)最大值(窗口宽-label宽)
+        if(newPos.x() < 0){
+            newPos.setX(0);
+        }
+        else if(newPos.x() > s1.width()-s2.width()){
+            newPos.setX(s1.width()-s2.width());
+        }
+        //y:最小值(0)最大值(窗口高-label高)
+        if(newPos.y() < 0){
+            newPos.setY(0);
+        }
+        else if(newPos.y() > s1.height()-s2.height()){
+            newPos.setY(s1.height()-s2.height());
+        }
+
+        //移动label到新位置
+        ui->moveLabel->move(newPos);
+    }
+}
+
+
+
+
 
