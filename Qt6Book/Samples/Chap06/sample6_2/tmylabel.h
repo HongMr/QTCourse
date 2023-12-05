@@ -16,6 +16,10 @@ signals:
     // QWidget interface
 protected:
     virtual void mouseDoubleClickEvent(QMouseEvent *event) override;
+
+    // QObject interface
+public:
+    virtual bool event(QEvent *event) override;
 };
 
 
