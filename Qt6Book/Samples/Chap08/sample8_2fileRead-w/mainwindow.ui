@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>621</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/icon/images/file-file.png</normaloff>:/icon/images/file-file.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>QFile直接操作</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="textEditDevice"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/icon/images/editFile.png</normaloff>:/icon/images/editFile.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>QTextStream操作</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPlainTextEdit" name="textEditStream"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actOpen_IODevice"/>
+   <addaction name="actSave_IODevice"/>
+   <addaction name="actSave_TextSafe"/>
+   <addaction name="separator"/>
+   <addaction name="actOpen_TextStream"/>
+   <addaction name="actSave_TextStream"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <action name="actOpen_IODevice">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/files.png</normaloff>:/icon/images/files.png</iconset>
+   </property>
+   <property name="text">
+    <string>QFile打开</string>
+   </property>
+   <property name="toolTip">
+    <string>用QFile打开文本文件</string>
+   </property>
+  </action>
+  <action name="actSave_IODevice">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/saveFile.png</normaloff>:/icon/images/saveFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>QFile另存</string>
+   </property>
+   <property name="toolTip">
+    <string>用QFile另存文件</string>
+   </property>
+  </action>
+  <action name="actSave_TextSafe">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/files-save.png</normaloff>:/icon/images/files-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>QSaveFile另存</string>
+   </property>
+   <property name="toolTip">
+    <string>用QSaveFile另存</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/exit.png</normaloff>:/icon/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actOpen_TextStream">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/files-open.png</normaloff>:/icon/images/files-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>QTextStream打开</string>
+   </property>
+   <property name="toolTip">
+    <string>用QTextStream打开文本文件</string>
+   </property>
+  </action>
+  <action name="actSave_TextStream">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/add_folder1.png</normaloff>:/icon/images/add_folder1.png</iconset>
+   </property>
+   <property name="text">
+    <string>QTextStream另存</string>
+   </property>
+   <property name="toolTip">
+    <string>用QTextStream另存文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>changed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

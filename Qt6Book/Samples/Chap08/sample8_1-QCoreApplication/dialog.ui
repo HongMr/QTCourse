@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>761</width>
-    <height>542</height>
+    <width>954</width>
+    <height>753</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,15 +24,15 @@
      </property>
      <widget class="QToolBox" name="toolBox">
       <property name="currentIndex">
-       <number>0</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="pageApp">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>199</width>
-         <height>350</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
@@ -108,8 +108,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>208</width>
-         <height>336</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
@@ -211,8 +211,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>199</width>
-         <height>350</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
@@ -365,39 +365,454 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>199</width>
-         <height>350</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
         <string>QDir类</string>
        </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>1</y>
+          <width>235</width>
+          <height>482</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="title">
+            <string>静态成员函数</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_39">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>tempPath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_40">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>rootPath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_42">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>homePath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="pushButton_41">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>drives()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_44">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>currentPath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="pushButton_43">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>setCurrent()</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="title">
+            <string>文件或目录操作</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_45">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>mkdir()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_46">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>rmdir()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_47">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>remove()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="pushButton_48">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>rename()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_49">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>setPath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="pushButton_50">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>removeRecursively()</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="title">
+            <string>文件或目录信息</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_51">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>absoluteFilePath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_52">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>absolutePath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="pushButton_54">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>filePath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="pushButton_58">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>isEmpty()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_55">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>path()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_57">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>exists()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_53">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>canonicalPath()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="pushButton_56">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>dirName()</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QPushButton" name="pushButton_60">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>entryList(dir)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QPushButton" name="pushButton_59">
+              <property name="toolTip">
+               <string>Returns the absolute canonical path of the system's temporary directory</string>
+              </property>
+              <property name="text">
+               <string>entryList(file)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
       <widget class="QWidget" name="pageTempDir">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>199</width>
-         <height>350</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
         <string>QTemporaryDir类</string>
        </attribute>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>231</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_61">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>1.在系统临时目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_62">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>2.在指定目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_63">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>3.在当前目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
       <widget class="QWidget" name="pageTempFile">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>199</width>
-         <height>350</height>
+         <width>251</width>
+         <height>525</height>
         </rect>
        </property>
        <attribute name="label">
         <string>QTemporaryFile类</string>
        </attribute>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>231</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_64">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>1.在系统临时目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_65">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>2.在指定目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_66">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>3.在当前目录下
+创建临时文件</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pageWatcher">
+       <attribute name="label">
+        <string>QFileSystemWatcher类</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>231</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_67">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>addPath()并开始监视</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_68">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>removePath()并停止监视</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_69">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>directories()</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_70">
+           <property name="toolTip">
+            <string>Returns the absolute canonical path of the system's temporary directory</string>
+           </property>
+           <property name="text">
+            <string>files()</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_2">
