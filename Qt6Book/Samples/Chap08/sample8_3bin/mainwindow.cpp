@@ -160,3 +160,33 @@ void MainWindow::on_btnBool_Read_clicked()
     ui->chkBox_Out->setChecked(value);
 }
 
+
+void MainWindow::on_btnDouble_Write_clicked()
+{
+    double value = ui->spinBox_double->value();
+    writeByStream(value);
+}
+
+
+void MainWindow::on_btnDouble_Read_clicked()
+{
+    double value;
+    readByStream(value);
+    ui->editDouble->setText(QString::asprintf("%.4f",value));
+}
+
+
+void MainWindow::on_btnQFont_Write_clicked()
+{
+    QFont font = ui->btnFont_In->font();
+    writeByStream(font);
+}
+
+
+void MainWindow::on_btnQFont_Read_clicked()
+{
+    QFont font;
+    readByStream(font);
+    ui->editFont->setFont(font);
+}
+

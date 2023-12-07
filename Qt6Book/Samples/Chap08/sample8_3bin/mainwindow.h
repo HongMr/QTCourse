@@ -55,6 +55,14 @@ private slots:
 
     void on_btnBool_Write_clicked();
 
+    void on_btnDouble_Write_clicked();
+
+    void on_btnDouble_Read_clicked();
+
+    void on_btnQFont_Write_clicked();
+
+    void on_btnQFont_Read_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
